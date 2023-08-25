@@ -1,2 +1,311 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*Colors*/
+  --btn-icon-hover: hsl(322, 100%, 66%);
+  --btn-hover:hsla(322, 100%, 66%, 0.72);
+  --headings-footer-bg: hsl(192, 100%, 9%);
+  --text: hsl(208, 11%, 55%);
+  --bg-color: hsl(193, 100%, 96%);
+  --card-bg: white;
+  /*Font-weights*/
+  --body: 400;
+  --heading-cta: 700;
+  /* Font Familys*/
+  --headings: "Poppins";
+  --body-cta: "Open Sans";
+  --font-size:1.125rem
+}
+.top-section{
+  background-image: url(images/bg-hero-mobile.svg);
+  background-size: cover;
+background-repeat: no-repeat;
+  background-color: var(--bg-color);
+  padding-bottom: 2em;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  padding-inline: 1em;
+}
+.logo{
+  width: 7em;
+}
+header button{
+  color: var(--headings-footer-bg);
+  background-color: white;
+  padding-inline: 1em;
+  padding-block: .3em;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0em 0em .4em var(--text);
+  font-family: var(--body-cta);
+}
+main img{
+  width: 100%;
+}
+.hero-section{
+  padding-inline: 1.3em
+}
+.hero-info{
+  text-align: center;
+  color: var(--headings-footer-bg);
+}
+h1{
+  padding-top: 3em;
+  padding-bottom: 1em;
+  font-family: var(--headings);
+
+  font-weight: 400;
+  font-size: 1.54rem;
+}
+.hero-info p{
+font-family: var(--body-cta);
+font-weight: 400;
+padding-bottom: 1em;
+font-size: var(--font-size);
+}
+.hero-info button{
+  padding-inline: 5em;
+  padding-block: .7em;
+  margin-bottom: 4em;
+  background-color: var(--btn-icon-hover);
+  color: white;
+  font-family: var(--body-cta);
+  border: none;
+  border-radius: 3em;
+  font-weight: var(--heading-cta);
+  cursor: pointer;
+}
+.hero-info button:hover{
+  background-color: var(--btn-hover);
+}
+.card-container{
+  margin-top: 4em;
+  padding-inline: 2em;
+  padding-block: 3em;
+  margin-inline: 1em;
+  text-align: center;
+  border-radius: 1em;
+  box-shadow: 0em 0em .2em .1em hsla(209, 11%, 55%, 0.19);
+  
+}
+.card-illustration{
+  padding-inline: 2em;
+}
+h2{
+  margin-top: 1.5em;
+  color: var(--headings-footer-bg);
+  font-family: var(--headings);
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-container p{
+  color: var(--text);
+  font-family: var(--body-cta);
+  font-size: var(--font-size);
+  
+}
+.bottom-card-container{
+   padding-inline: 1em;
+}
+.bottom-card{
+  box-shadow: 0em 0em .2em .1em hsla(209, 11%, 55%, 0.19);
+  background-color: white;
+  margin-top: 3em;
+  padding-block: 3em;
+  border-radius: 1em;
+  position: relative;
+  bottom: -4.5em;
+  text-align: center;
+  padding-inline: .5em;
+}
+.bottom-card h3{
+  color: var(--headings-footer-bg);
+  font-family: var(--headings);
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  font-size: 1.1rem;
+}
+.bottom-card button{
+  box-shadow: 0em 0em .2em .1em hsla(209, 11%, 55%, 0.19);
+  padding-inline: 5em;
+  padding-block: 1em;
+  background-color: var(--btn-icon-hover);
+  color: white;
+  font-family: var(--body-cta);
+  border: none;
+  border-radius: 3em;
+  font-weight: var(--heading-cta);
+  
+}
+.bottom-card button:hover{
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
+footer{
+  background-color: var(--headings-footer-bg);
+  color: white;
+  padding-block-start: 10em;
+  padding-inline: 1.2em;
+  font-family: var(--body-cta);
+}
+.column-info-flex{
+  display: flex;
+}
+.column-info-flex img{
+  margin-right: 1em;
+}
+.column{
+  margin-top: 1em;
+}
+.column div{
+  margin-top: .8em;
+}
+.column div a{
+  color: white;
+  text-decoration: none;
+}
+.column div a:hover{
+  text-decoration: underline;
+}
+.email{
+  margin-bottom: 3em;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  margin-left: 1em;
+  border: white 1px solid;
+  padding-inline: .7em;
+  border-radius: 5em;
+  width: 3em;
+  height: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.icon:hover{
+  color: var(--btn-icon-hover);
+  border-color:var(--btn-icon-hover) ;
+  cursor: pointer;
+ }
+.copy-right{
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width:1000px) {
+  .top-section{
+    padding-bottom: 4em;
+  }
+  header{
+    margin-bottom: 4em;
+    padding-top: 2em;
+    padding-inline: 4em;
+  }
+  .logo{
+    width: 12.5em;
+  }
+  header button{
+    padding-inline: 3.5em;
+    padding-block: .8em;
+    border-radius: 2em;
+  }
+   .hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 6em;
+   }
+   .hero-info{
+    text-align: left;
+    max-width: 32em;
+    margin-right: 4em;
+   }
+   h1{
+    font-size: 2.5em;
+    padding-top: 1em;
+   }
+   .hero-info p {
+    margin-bottom: 1em;
+   }
+   .hero-info button{
+    padding-block: 1.5em;
+   }
+   .card-container{
+    margin-inline:  5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 5em;
+    text-align: left;
+   }
+   .card-illustration{
+     max-width: 30em;
+   }
+   .card-info{
+    max-width: 30em;
+   }
+   .card-1, .card-3{
+    flex-direction: row-reverse;
+   }
+   h2{
+    font-size: 1.8rem;
+    
+   }
+   .bottom-card-container{
+    padding-inline: 20em;
+   }
+
+   .bottom-card h3{
+    font-size: 2rem;
+   }
+   .bottom-card button{
+    padding-block: 1.5em;
+    font-size: 1rem;
+    
+   }
+   footer{
+    padding-top: 5em;
+   }
+   .column-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5em;
+    padding-block-start: 2em;
+   }
+   .column{
+    max-width: 26em;
+    
+   }
+   .footer-logo{
+    max-width: 10em;
+   }
+  
+   .copy-right{
+    text-align: right;
+   }
+}
